@@ -11,13 +11,14 @@ h1 {
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
 }
 
 .bookslist-container {
-  padding-top: 20px;
+  padding: 2px 5px 2px 8px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   gap: 3px;
@@ -29,7 +30,7 @@ hr {
 }
 
 #add-form {
-  padding-top: 20px;
+  padding-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,14 +47,4 @@ hr {
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
-}
-
-.book-container {
-  border: 1px solid rgb(61, 58, 58);
-}
-
-.book-info {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
 }
