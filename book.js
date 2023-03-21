@@ -17,7 +17,6 @@ function addBook(title, author) {
 // Function to remove a book from the collection
 // Refreshing the local Storage too with the updated BookCollection
 function removeBook(index) {
-  console.log(typeof index)
   bookCollection = bookCollection.filter((book, ref) => ref !== +index);
   localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
 }
