@@ -105,10 +105,11 @@ ul {
   background: #fff;
   box-shadow: 3px 5px #393939;
   margin-right: 5px;
+  font-size: 16px;
 }
 
 #remove-btn {
-  font-size: 14px;
+  font-size: 15px;
   background: #fff;
   box-shadow: 3px 5px #393939;
   margin-top: 3px;
