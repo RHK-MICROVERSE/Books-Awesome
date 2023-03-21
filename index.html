@@ -11,10 +11,13 @@
 
   <body>
     <main>
-      <h1>Awesome Books</h1>
+      <h1>All awesome books</h1>
       <div class="book-container">
-        <ul id="book-list">
-        </ul>
+        <ul id="book-list"></ul>
+      </div>
+      <hr class="separation-book-form">
+      <div class="form-input">
+        <h1 class="form-title">Add a new book</h1>
         <form action="" method="post" id='add-form'>
           <label for="book-title">
             <input  type="text" 
@@ -22,6 +25,7 @@
                     id="book-title" 
                     placeholder="Title" 
                     required
+                    size="35%"
                     minlength="4"
                     maxlength="100">
           </label>
@@ -31,13 +35,15 @@
                     id="book-author" 
                     placeholder="Author" 
                     required
+                    size="35%"
                     minlength="4"
                     maxlength="100">
           </label>
-          <button type="submit" class="add-book" id="book-added-btn">
+          <button type="submit" class="add-book-btn" id="book-added-btn">
             Add
           </button>
         </form>
+      </div>
     </main>
     <script src="book.js"></script>
   </body>

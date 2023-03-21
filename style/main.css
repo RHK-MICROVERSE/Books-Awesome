@@ -16,8 +16,8 @@ h1 {
 .bookslist-container {
   padding-top: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
   gap: 3px;
@@ -46,4 +46,14 @@ hr {
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
+}
+
+.book-container {
+  border: 1px solid rgb(61, 58, 58);
+}
+
+.book-info {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
