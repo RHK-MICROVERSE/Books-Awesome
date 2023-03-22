@@ -1,26 +1,25 @@
 /* Checking local storage if undefined will creeate an empty array */
 class Book {
-  constructor(title, author, index = null) {
+  constructor(title, author) {
     this.title = title;
     this.author = author;
-    this.index = index;
   }
 }
 
 class BookCRUD {
   static readBook() {
-    let booksCollection = localStorage.getItem('BOOKS') === null ? [] : JSON.parse(localStorage.getItem('BOOKS'));
+    const booksCollection = localStorage.getItem('BOOKS') === null ? [] : JSON.parse(localStorage.getItem('BOOKS'));
     return booksCollection;
   }
 
   static createBook(book) {
-    let booksCollection = BookCRUD.readBook();
+    const booksCollection = BookCRUD.readBook();
     booksCollection.push(book);
     localStorage.setItem('BOOKS', JSON.stringify(booksCollection));
   }
 
   static removeBook(index) {
-    let booksCollection = BookCRUD.readBook();
+    const booksCollection = BookCRUD.readBook();
     booksCollection = booksCollection.filter((book, ref) => ref !== +index);
     localStorage.setItem('BOOKS', JSON.stringify(booksCollection));
   }
@@ -28,8 +27,8 @@ class BookCRUD {
 
 class Interface {
   static renderBooks() {
-    let bookList = document.getElementById('book-list');
-    let booksCollection = BookCRUD.readBook();
+    const bookList = document.getElementById('book-list');
+    const booksCollection = BookCRUD.readBook();
     bookList.innerHTML = booksCollection.map((book, ref) => (ref % 2 === 0 ? ` 
                             <div class="bookslist-container grey">
                               <div class="book-info">
@@ -61,7 +60,7 @@ class Interface {
                               </button>        
                             </div>
                           `)).join('')
-  }
+  };
 }
 
 document.addEventListener('DOMContentLoaded', Interface.renderBooks);
@@ -72,9 +71,9 @@ const authorInput = document.getElementById('book-author');
 
 addForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  let title = titleInput.value;
-  let author = authorInput.value;
-  let book = new Book(title, author);
+  const title = titleInput.value;
+  const author = authorInput.value;
+  const book = new Book(title, author);
   if (title && author) {
     BookCRUD.createBook(book);
     Interface.renderBooks();
