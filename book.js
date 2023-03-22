@@ -1,4 +1,4 @@
-/* Checking local storage if undefined will creeate an empty array */
+/* eslint max-classes-per-file: ["errnpor", 3] */
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -19,7 +19,7 @@ class BookCRUD {
   }
 
   static removeBook(index) {
-    const booksCollection = BookCRUD.readBook();
+    let booksCollection = BookCRUD.readBook();
     booksCollection = booksCollection.filter((book, ref) => ref !== +index);
     localStorage.setItem('BOOKS', JSON.stringify(booksCollection));
   }
@@ -59,8 +59,8 @@ class Interface {
                               data-index='${ref}'>Remove
                               </button>        
                             </div>
-                          `)).join('')
-  };
+                          `)).join('');
+  }
 }
 
 document.addEventListener('DOMContentLoaded', Interface.renderBooks);
