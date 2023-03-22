@@ -29,15 +29,6 @@ hr {
   width: 300px;
 }
 
-#add-form {
-  padding-top: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
 #remove-btn,
 #book-list,
 #book-title,
@@ -64,12 +55,11 @@ hr {
 
 .separation-book-form {
   margin: 1vw auto 2vw;
-  border:none;
-  height: 20px;
- 	width: 20%;
-	height: 50px;
-	border-bottom: 1px solid #1f1209;
-	box-shadow: 0 20px 20px -20px #333;
+  border: none;
+  width: 20%;
+  height: 50px;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
 }
 
 .form-title {
@@ -96,6 +86,12 @@ ul {
 }
 
 #add-form {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   align-self: center;
   width: auto;
 }
