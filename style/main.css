@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  min-height: 90vh;
+}
+
 .navbar{
   border: 2px solid;
   display: flex;
@@ -25,6 +29,10 @@
   cursor: pointer;
 }
 
+.link-click {
+  text-decoration: none;
+}
+
 .separator{
   border-left: 2px solid;
 }
@@ -32,6 +40,7 @@
 .datetime{
   display: flex;
   justify-content: flex-end;
+  margin-right: 15px;
 }
 
 h1 {
@@ -83,8 +92,12 @@ hr {
   gap: 5px;
 }
 
+#display-books {
+  margin-bottom: 70px;
+}
+
 .separation-book-form {
-  margin: 1vw auto 2vw;
+  margin: -50px auto 2vw;
   border: none;
   width: 20%;
   height: 50px;
@@ -113,6 +126,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 #add-form {
@@ -158,4 +172,18 @@ ul {
 .contact-info{
   margin-left: -229px;
   line-height: 0.9cm;
+}
+
+#footer{
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  position: sticky;
+  bottom: 0;
+  width: 98.2%;
+  background: #fff;
+  margin-bottom: 0;
 }

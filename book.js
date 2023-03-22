@@ -91,6 +91,28 @@ bookList.addEventListener('click', (e) => {
   }
 });
 
-
 var dt = new Date();
-document.getElementById('datetime').innerHTML = dt
+document.getElementById('datetime').innerHTML = dt;
+
+function onlyDisplayBook() {
+  document.getElementById('display-books').style.display = 'unset';
+  document.getElementById('separation-book-form').style.display = 'none';
+  document.getElementById('input-book').style.display = 'none';
+  document.getElementById('contact').style.display = 'none';
+}
+
+function onlyDisplayInputBook() {
+  document.getElementById('input-book').style.display = 'unset';
+  document.getElementById('display-books').style.display = 'none';
+  document.getElementById('separation-book-form').style.display = 'none';
+  document.getElementById('contact').style.display = 'none';
+}
+
+function onlyDisplayContact() {
+  document.getElementById('contact').style.display = 'unset';
+  document.getElementById('display-books').style.display = 'none';
+  document.getElementById('separation-book-form').style.display = 'none';
+  document.getElementById('input-book').style.display = 'none';
+}
+
+
