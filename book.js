@@ -115,4 +115,7 @@ function onlyDisplayContact() {
   document.getElementById('input-book').style.display = 'none';
 }
 
+window.onload = () => {
+  onlyDisplayBook()
+}
 
