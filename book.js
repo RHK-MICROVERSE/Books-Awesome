@@ -91,7 +91,7 @@ bookList.addEventListener('click', (e) => {
   }
 });
 
-var dt = new Date();
+const dt = new Date();
 document.getElementById('datetime').innerHTML = dt;
 
 function onlyDisplayBook() {
@@ -101,6 +101,7 @@ function onlyDisplayBook() {
   document.getElementById('contact').style.display = 'none';
 }
 
+/* eslint-disable no-unused-vars */
 function onlyDisplayInputBook() {
   document.getElementById('input-book').style.display = 'unset';
   document.getElementById('display-books').style.display = 'none';
@@ -108,6 +109,7 @@ function onlyDisplayInputBook() {
   document.getElementById('contact').style.display = 'none';
 }
 
+/* eslint-disable no-unused-vars */
 function onlyDisplayContact() {
   document.getElementById('contact').style.display = 'unset';
   document.getElementById('display-books').style.display = 'none';
@@ -116,6 +118,5 @@ function onlyDisplayContact() {
 }
 
 window.onload = () => {
-  onlyDisplayBook()
-}
-
+  onlyDisplayBook();
+};

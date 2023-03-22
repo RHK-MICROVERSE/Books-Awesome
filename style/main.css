@@ -8,7 +8,7 @@ main {
   min-height: 90vh;
 }
 
-.navbar{
+.navbar {
   border: 2px solid;
   display: flex;
   justify-content: space-between;
@@ -16,12 +16,12 @@ main {
   padding: 10px;
 }
 
-.navbar h2{
+.navbar h2 {
   margin-left: 10px;
   cursor: pointer;
 }
 
-.nav-links{
+.nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -33,14 +33,15 @@ main {
   text-decoration: none;
 }
 
-.separator{
+.separator {
   border-left: 2px solid;
 }
 
-.datetime{
+.datetime {
   display: flex;
   justify-content: flex-end;
   margin-right: 15px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -158,7 +159,7 @@ ul {
   padding: 5px 10px;
 }
 
-.contact-page{
+.contact-page {
   display: flex;
   flex-direction: column;
   min-height: 30vh;
@@ -169,12 +170,12 @@ ul {
   font-size: 20px;
 }
 
-.contact-info{
+.contact-info {
   margin-left: -229px;
   line-height: 0.9cm;
 }
 
-#footer{
+#footer {
   border: 2px solid;
   display: flex;
   justify-content: space-between;
