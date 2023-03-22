@@ -90,3 +90,7 @@ bookList.addEventListener('click', (e) => {
     Interface.renderBooks();
   }
 });
+
+
+var dt = new Date();
+document.getElementById('datetime').innerHTML = dt
