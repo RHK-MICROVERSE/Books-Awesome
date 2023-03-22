@@ -4,6 +4,46 @@
   box-sizing: border-box;
 }
 
+main {
+  min-height: 90vh;
+}
+
+.navbar {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+.navbar h2 {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.link-click {
+  text-decoration: none;
+}
+
+.separator {
+  border-left: 2px solid;
+}
+
+.datetime {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
 h1 {
   padding-top: 50px;
   display: flex;
@@ -53,8 +93,12 @@ hr {
   gap: 5px;
 }
 
+#display-books {
+  margin-bottom: 70px;
+}
+
 .separation-book-form {
-  margin: 1vw auto 2vw;
+  margin: -50px auto 2vw;
   border: none;
   width: 20%;
   height: 50px;
@@ -83,6 +127,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 #add-form {
@@ -112,4 +157,34 @@ ul {
   margin-right: 10px;
   margin-bottom: 7px;
   padding: 5px 10px;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.contact-info {
+  margin-left: -229px;
+  line-height: 0.9cm;
+}
+
+#footer {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  position: sticky;
+  bottom: 0;
+  width: 98.6%;
+  background: #fff;
+  margin-bottom: 0;
 }
